@@ -54,12 +54,13 @@ const classes = computed(() => ['btn', `btn--${props.variant}`, `btn--${props.si
 
 .btn--primary {
   background: var(--color-accent);
-  color: var(--color-on-accent);
+  /* Softer label so the button sits quieter on the page. */
+  color: #7a9a7e;
 }
 
 .btn--primary:hover {
   background: var(--color-accent-deep);
-  color: var(--color-on-accent);
+  color: #7a9a7e;
 }
 
 .btn--secondary {
