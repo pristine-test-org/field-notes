@@ -1,0 +1,73 @@
+/*
+ * Field Notes design tokens. Every colour, size, space and radius used by a
+ * component comes from here. DESIGN.md mirrors these values; change both in
+ * the same commit.
+ */
+:root {
+  /* Paper and ink */
+  --color-paper: #f6f3ea;
+  --color-paper-raised: #fffdf7;
+  --color-paper-sunk: #ece7da;
+  --color-ink: #1c2620;
+  --color-ink-muted: #3f4a42;
+  --color-ink-faint: #5d665e;
+  --color-rule: #d8d1bf;
+  --color-rule-strong: #b3aa94;
+
+  /* Moss: the one accent */
+  --color-accent: #2f5a3c;
+  --color-accent-deep: #1f3f29;
+  --color-accent-tint: #e2ebdf;
+  --color-on-accent: #fffdf7;
+
+  /* Ochre: dates, weather and highlights */
+  --color-ochre: #8a5210;
+  --color-ochre-tint: #f5e7cc;
+
+  /* Feedback */
+  --color-danger: #9b3526;
+  --color-danger-tint: #f7e1dc;
+
+  /* Type families */
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Charter, Georgia, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type scale (16px root) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.875rem;
+  --text-2xl: 2.75rem;
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-body: 1.6;
+  --tracking-label: 0.12em;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Depth */
+  --shadow-card: 0 1px 0 rgb(28 38 32 / 0.05), 0 10px 24px -18px rgb(28 38 32 / 0.35);
+  --focus-ring: 0 0 0 3px var(--color-paper), 0 0 0 5px var(--color-accent);
+
+  /* Layout */
+  --page-max: 72rem;
+  --measure: 64ch;
+}

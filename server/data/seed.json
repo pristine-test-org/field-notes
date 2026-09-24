@@ -1,0 +1,157 @@
+{
+  "accounts": [
+    {
+      "email": "editor@field-notes.test",
+      "password": "fieldnotes-editor",
+      "name": "Maren Holt",
+      "role": "editor"
+    },
+    {
+      "email": "reader@field-notes.test",
+      "password": "fieldnotes-reader",
+      "name": "Theo Park",
+      "role": "reader"
+    }
+  ],
+  "saved": {
+    "reader@field-notes.test": ["tidepool-census", "first-frost"]
+  },
+  "entries": [
+    {
+      "id": "tidepool-census",
+      "title": "Low-tide census at Cattle Point",
+      "date": "2026-08-30",
+      "place": "Cattle Point, San Juan Island",
+      "lat": 48.451,
+      "lng": -122.963,
+      "weather": "Overcast, 14 °C, light westerly",
+      "tags": ["tide-pools", "invertebrates"],
+      "author": "Maren Holt",
+      "summary": "A minus tide opened the lower shelf. Ochre stars in every crevice, and a single gumboot chiton the size of a shoe.",
+      "body": [
+        "The tide bottomed out at 06:12, a little under minus two feet, and the lower shelf stayed dry for almost an hour. We worked the transect from the boulder field to the kelp line in twenty-metre sections.",
+        "Ochre stars were everywhere, mostly purple morphs, wedged into crevices on the north-facing side. We counted forty-one in the first section alone, which is well up on last August.",
+        "The find of the morning was a gumboot chiton near the kelp line, easily thirty centimetres long, rust-red and leathery. It did not move the whole time we watched it."
+      ]
+    },
+    {
+      "id": "first-frost",
+      "title": "First frost on the upper meadow",
+      "date": "2026-09-18",
+      "place": "Hurricane Ridge meadow",
+      "lat": 47.969,
+      "lng": -123.498,
+      "weather": "Clear, −1 °C at dawn",
+      "tags": ["weather", "meadow"],
+      "author": "Maren Holt",
+      "summary": "Rime on every lupine seed head before sunrise. The marmots had already gone quiet.",
+      "body": [
+        "The thermometer at the trailhead read minus one when we arrived at dawn. The meadow was white with rime, every lupine seed head furred with it.",
+        "No marmot calls at all, which fits: the colony below the ridge has usually gone to ground by the third week of September.",
+        "By nine the frost had burned off everywhere except the shaded side of the talus slope."
+      ]
+    },
+    {
+      "id": "chanterelle-flush",
+      "title": "Chanterelle flush after the rain",
+      "date": "2026-09-09",
+      "place": "Lake Crescent north shore",
+      "lat": 48.094,
+      "lng": -123.803,
+      "weather": "Drizzle, 12 °C",
+      "tags": ["fungi", "forest"],
+      "author": "Theo Park",
+      "summary": "Three days of rain and the Douglas-fir duff is full of golden chanterelles. Also a patch of lobster mushrooms nobody expected.",
+      "body": [
+        "After three days of steady rain the moss under the Douglas-firs was saturated, and the chanterelles came up in lines along the old root runs.",
+        "We logged sixty-two fruiting bodies in the plot, most of them young and firm. Near the creek crossing there was a patch of lobster mushrooms, bright orange against the moss.",
+        "Collected nothing; photographs and counts only."
+      ]
+    },
+    {
+      "id": "heron-rookery",
+      "title": "Heron rookery, late season",
+      "date": "2026-08-14",
+      "place": "Nisqually Delta",
+      "lat": 47.072,
+      "lng": -122.713,
+      "weather": "Sunny, 22 °C",
+      "tags": ["birds", "wetland"],
+      "author": "Maren Holt",
+      "summary": "Most nests empty now, but two late broods are still being fed. Juveniles practising short flights between the alders.",
+      "body": [
+        "Of the thirty-eight nests counted in May, only two still had young in them. Both broods looked close to fledging.",
+        "Several juveniles were making short, clumsy flights between the alders at the edge of the colony, landing badly and trying again.",
+        "The boardwalk closure sign can come down at the end of the month."
+      ]
+    },
+    {
+      "id": "lichen-survey",
+      "title": "Lichen survey on the old orchard fence",
+      "date": "2026-07-27",
+      "place": "Ebey's Landing",
+      "lat": 48.198,
+      "lng": -122.707,
+      "weather": "Fog lifting, 16 °C",
+      "tags": ["lichens", "forest"],
+      "author": "Theo Park",
+      "summary": "Nine species on forty metres of split-rail fence, including a healthy colony of Methuselah's beard on the windward posts.",
+      "body": [
+        "The split-rail fence along the old orchard is a lichen garden. We identified nine species on forty metres of rail.",
+        "The windward posts carry a long, pale colony of Methuselah's beard, which only grows where the air is clean.",
+        "Next visit: bring the hand lens with the better light."
+      ]
+    },
+    {
+      "id": "salmon-run",
+      "title": "Coho moving up the creek",
+      "date": "2026-09-22",
+      "place": "Kennedy Creek",
+      "lat": 47.101,
+      "lng": -123.086,
+      "weather": "Showers, 13 °C",
+      "tags": ["fish", "rivers"],
+      "author": "Maren Holt",
+      "summary": "The first coho are holding in the pool below the footbridge. Eagles already lining the snags downstream.",
+      "body": [
+        "Eleven coho were holding in the deep pool below the footbridge, waiting for the water to rise.",
+        "Five bald eagles on the snags downstream, which usually means the run is about to start in earnest.",
+        "Water temperature at the bridge: 11 °C."
+      ]
+    },
+    {
+      "id": "night-moths",
+      "title": "Moth sheet at the ranger cabin",
+      "date": "2026-07-11",
+      "place": "Staircase ranger cabin",
+      "lat": 47.515,
+      "lng": -123.329,
+      "weather": "Warm night, 17 °C, no wind",
+      "tags": ["insects", "forest"],
+      "author": "Theo Park",
+      "summary": "A white sheet and a lantern from ten until one. Twenty-three species, including a ceanothus silk moth that stayed until morning.",
+      "body": [
+        "We hung the white sheet between two cedars and ran the lantern from ten until one.",
+        "Twenty-three species came in. The ceanothus silk moth arrived just before midnight and was still on the sheet at dawn.",
+        "Humidity was high and the wind never picked up, which may explain the numbers."
+      ]
+    },
+    {
+      "id": "kelp-canopy",
+      "title": "Measuring the bull kelp canopy",
+      "date": "2026-08-03",
+      "place": "Salt Creek",
+      "lat": 48.164,
+      "lng": -123.701,
+      "weather": "Bright, 18 °C, calm sea",
+      "tags": ["kelp", "tide-pools"],
+      "author": "Maren Holt",
+      "summary": "Calm water let us paddle the full canopy edge. It has grown back past the reef for the first time in four summers.",
+      "body": [
+        "A flat sea let us paddle the whole outer edge of the kelp bed with the GPS running.",
+        "The canopy now reaches past the outer reef, which it has not done since the marine heatwave four summers ago.",
+        "Sea urchin counts on the reef flat were the lowest we have recorded."
+      ]
+    }
+  ]
+}
