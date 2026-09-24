@@ -40,7 +40,7 @@ jobs:
         shell: bash
         run: |
           exec > >(tee impeccable-step.log) 2>&1
-          nuxt prepare
+          yarn nuxt prepare
       - id: build
         shell: bash
         run: |
