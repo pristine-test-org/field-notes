@@ -52,7 +52,9 @@ useHead({ title: () => entry.value?.title ?? 'Entry' })
           <div>
             <dt>Tags</dt>
             <dd class="tags">
-              <TagPill v-for="tag in entry.tags" :key="tag" :tag="tag" />
+              <NuxtLink v-for="tag in entry.tags" :key="tag" :to="`/tags/${tag}`" class="tag-link">
+                <TagPill :tag="tag" />
+              </NuxtLink>
             </dd>
           </div>
         </dl>
@@ -146,6 +148,16 @@ useHead({ title: () => entry.value?.title ?? 'Entry' })
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
+}
+
+.tag-link {
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.tag-link:hover :deep(.tag) {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
 }
 
 .hint {
