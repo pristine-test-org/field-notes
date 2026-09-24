@@ -15,7 +15,7 @@
   --color-rule-strong: #b3aa94;
 
   /* Moss: the one accent */
-  --color-accent: #2f5a3c;
+  --color-accent: #3b7a50;
   --color-accent-deep: #1f3f29;
   --color-accent-tint: #e2ebdf;
   --color-on-accent: #fffdf7;
@@ -36,7 +36,7 @@
   /* Type scale (16px root) */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
-  --text-base: 1rem;
+  --text-base: 1.0625rem;
   --text-md: 1.125rem;
   --text-lg: 1.375rem;
   --text-xl: 1.875rem;
