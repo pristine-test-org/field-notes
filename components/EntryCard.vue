@@ -1,16 +1,26 @@
 <script setup lang="ts">
 import type { Entry } from '~~/shared/types'
 
-defineProps<{ entry: Entry }>()
+const props = defineProps<{ entry: Entry }>()
+
+const badge = computed(() => {
+  const d = new Date(`${props.entry.date}T00:00:00Z`)
+  return {
+    day: d.getUTCDate(),
+    month: d.toLocaleString('en-GB', { month: 'short', timeZone: 'UTC' }),
+  }
+})
 </script>
 
 <template>
   <article class="card">
-    <p class="meta">
-      <time :datetime="entry.date">{{ formatDate(entry.date) }}</time>
-      <span aria-hidden="true">·</span>
-      <span>{{ entry.place }}</span>
-    </p>
+    <div class="top">
+      <time class="badge" :datetime="entry.date" :title="formatDate(entry.date)">
+        <span class="badge-day">{{ badge.day }}</span>
+        <span class="badge-month">{{ badge.month }}</span>
+      </time>
+      <p class="meta">{{ entry.place }}</p>
+    </div>
     <h2 class="title">
       <NuxtLink :to="`/entries/${entry.id}`">{{ entry.title }}</NuxtLink>
     </h2>
@@ -25,8 +35,8 @@ defineProps<{ entry: Entry }>()
 .card {
   position: relative;
   display: grid;
-  gap: var(--space-2);
-  padding: var(--space-4);
+  gap: var(--space-3);
+  padding: var(--space-5);
   background: var(--color-paper-raised);
   border: 1px solid var(--color-rule);
   border-radius: var(--radius-md);
@@ -37,10 +47,38 @@ defineProps<{ entry: Entry }>()
   border-color: var(--color-rule-strong);
 }
 
-.meta {
+.top {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-1);
+}
+
+.badge {
+  display: grid;
+  justify-items: center;
+  min-width: 3rem;
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-ochre-tint);
+  color: var(--color-ochre);
+  border-radius: var(--radius-sm);
+  line-height: var(--leading-tight);
+}
+
+.badge-day {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.badge-month {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.meta {
   font-size: var(--text-xs);
   color: var(--color-ink-faint);
 }
@@ -77,7 +115,7 @@ defineProps<{ entry: Entry }>()
 
 .tags {
   list-style: none;
-  margin: 0;
+  margin: var(--space-1) 0 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
